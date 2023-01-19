@@ -14,6 +14,6 @@ services:
       - "traefik.http.routers.pacman.tls.certresolver=myresolver"
 
 networks:
-  network1:
-    name: traefik
-    external: true
+  default:
+    external:
+      name: traefik
